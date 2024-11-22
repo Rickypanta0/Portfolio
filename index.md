@@ -5,42 +5,29 @@ is_contact: true
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="minion.jpg">
 
-Hi! I am a juniorSIUM d year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Hi! I am a senior year student of B.E. Computer Science at Università degli Studi di Udine, Italy.
 
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
+## Education
 
-## Research Interest
+- __Università degli Studi di Udine__<span style="display:inline-block; width: 300px;"></span>Udine, Italy<br>
+ BSc Computer Science, Expected Graduation 2025<span style="display:inline-block; width: 128px;"></span>Set. 2022 - Present<br>
+    - __Skills__: Algorithm and Data Structures, Data Base, Machine Learning, Software Engineering, OOP
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+## Work Experience
 
-## Publications
+- __Alla Pergola Ristorante__ <span style="display:inline-block; width: 340px;"></span>Cormons, Italy<br>
+Delivery<span style="display:inline-block; width: 415px;"></span>August 2021 - Present<br>
+    - Efficiently managed timely deliveries, organized and optimized delivery routes to reduce travel time and increase efficiency.
 
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+## Extra activities
 
-## Typography
+- __Football Refree__ <span style="display:inline-block; width: 340px;"></span>Cormons, Italy<br>
+2015 - 2020<br>
+    - During my career I have officialized matches up to third category.
+    - Improving my decision-making and resilience by managing disputes and maintaining fair play.
 
-This is a [link](http://google.com). Something *italics* and something **bold**.
 
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
-
----
-
-Here is a blockquote
-
-> To a great mind, nothing is little
-
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+## Additional
+- __Languages__: English (B2), Italian (Native)<br>

@@ -1,0 +1,7 @@
+# _config_pdf.yml
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      is_pdf: true

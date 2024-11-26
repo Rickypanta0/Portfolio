@@ -23,7 +23,12 @@
     <meta name="description" content="{{ desc }}">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="/assets/main.css">
+    {% if page.is_pdf %}
+        <!-- absolute path to CSS -->
+        <link rel="stylesheet" href="file:///Users/rickypanta/Desktop/repo/Portfolio/_site/assets/main.css">
+    {% else %}
+        <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    {% endif %}
     {% if site.favicon %}
         <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
         <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
@@ -60,19 +65,45 @@
                 <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
             <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
-            <ul id="navlist" class="alignable pull-right navbar-ul">
-                {% for x in site.nav %}
-                    {% if x.name == "Resume" %}
-                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
-                    {% else %}
-                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
-                    {% endif %}
-                    {% if forloop.last == false %}
-                        /
-                    {% endif %}
+            {% if page.is_pdf %}
+            <!-- Include the Contacs instead of NavBar -->
+            <div class="navbar container">
+                <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+                <ul id="contactlist" class="alignable pull-right navbar-ul">
+                    {% for x in site.contacts %}
+                        <li class="alignable pull-left nav-list">
+                            {% if x.display %}
+                                {{ x.name }}: <a href="{{ x.link }}">{{ x.display }}</a>
+                            {% else %}
+                                <a href="{{ x.link }}">{{ x.name }}</a>
+                            {% endif %}
+                            {% if forloop.last == false %}
+                                /
+                            {% endif %}
                         </li>
-                {% endfor %}
-            </ul>
+                    {% endfor %}
+                </ul>
+        {% else %}
+            <!-- Original Navbar -->
+            <div class="navbar container">
+                {% if site.ins_logo %}
+                    <img id="ins-logo" src="{{ site.ins_logo }}" />
+                {% endif %}
+                <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+                <ul id="navlist" class="alignable pull-right navbar-ul">
+                    {% for x in site.nav %}
+                        {% if x.name == "Resume" %}
+                            <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                        {% else %}
+                            <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        {% endif %}
+                        {% if forloop.last == false %}
+                            /
+                        {% endif %}
+                            </li>
+                    {% endfor %}
+                </ul>
+        {% endif %}
         </div>
         <div style="clear:both"></div>
         <hr>

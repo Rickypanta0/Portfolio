@@ -1,17 +1,17 @@
 
 #!/bin/bash
 
-# Verifica che wkhtmltopdf sia installato
+#verify install wkhtmltopdf
 if ! command -v wkhtmltopdf &> /dev/null
 then
-    echo "wkhtmltopdf non è installato. Installalo prima di procedere."
+    echo "wkhtmltopdf not installed."
     exit 1
 fi
+#pre build jekyll
 jekyll build --config _config.yml,_config_pdf.yml
-# Percorsi
-INPUT_FILE="_site/index.html"
+INPUT_FILE="_site/default_pdf.html"
 OUTPUT_FILE="resume.pdf"
-
-# Genera il PDF
+# generation PDF
 wkhtmltopdf --enable-local-file-access "$INPUT_FILE" "$OUTPUT_FILE"
+#lauch jekyll
 jekyll serve

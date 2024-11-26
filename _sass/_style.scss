@@ -1,4 +1,4 @@
-@import "vars";
+@use "vars";
 
 /*
  * Basic
@@ -127,5 +127,6 @@ hr {
 	}
 }
 
-@import "typography";
-@import "tables";
+@use "typography";
+@use "tables";
+

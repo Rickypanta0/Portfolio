@@ -52,6 +52,18 @@ nav:
    link: "/resume.pdf"
  - name: "Contact"
    link: "/contact/"
+  
+contacts:
+  - name: "Email"
+    display: "rickypanta.dev@gmail.com"
+    link: "mailto:rickypanta.dev@gmail.com"
+  - name: "Phone"
+    display: "+39-3280878983"
+    link: "tel:+39-3280878983"
+  - name: "GitHub"
+    link: "https://github.com/Rickypanta0"
+  - name: "LinkedIn"
+    link: "https://www.linkedin.com/in/rickypanta"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
